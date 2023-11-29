@@ -23,7 +23,7 @@ console.log("À vous de jouer ! 💻🔍✨");
 // - les conditions (if, else if, else)
 // - les tableaux (array)
 // - les fonctions (function)
-// - parcourez un tableau (forEach)
+// - parcourez un tableau (for)
 // - les variables (let)
 
 // Écrivez un algorithme en pseudo-code étape par étape pour résoudre le problème. Pensez à utiliser des boucles, des conditions, et des variables.
