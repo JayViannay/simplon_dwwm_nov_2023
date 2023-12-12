@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calulette JS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Calculatrice JS</h1>
+        <form>
+            <input type="number" name="number1" id="number1" placeholder="Nombre 1">
+            <input type="number" name="number2" id="number2" placeholder="Nombre 2">
+            <select name="operator" id="operator">
+                <option value="addition">+</option>
+                <option value="soustraction">-</option>
+                <option value="multiplication">*</option>
+                <option value="division">/</option>
+            </select>
+            <button type="submit" id="calculate_button">Calculer</button>
+        </form>
+        <div id="result"></div>
+        <div id="error"></div>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

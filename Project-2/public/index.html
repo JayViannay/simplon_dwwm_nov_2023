@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Adaptabilité écrans -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Dépendances Librairies CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Dépendances Locales CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <!-- Titre du site -->
+    <title>Space Tour</title>
+</head>
+
+<body>
+    <header>
+        <!-- Barre de Navigation -->
+        <nav>
+            <!-- Logo Lien -->
+            <a href="/public/index.html" id="brand-link">
+                <img src="assets/images/astronaute.png" id="brand-logo" alt="logo angence de voyages">
+            </a>
+            <!-- Menu de Navigation Desktop (Invisible en vue Mobile) -->
+            <ul id="nav-desktop">
+                <li><a href="#home" class="nav-link active-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- Fin du Navigation Desktop -->
+            <!-- Menu de Navigation Mobile (Invisible en vue Desktop) -->
+            <button id="bg-menu" class="btn-menu">
+                <img src="assets/images/burger-bar.png" alt="burger menu icon">
+            </button>
+            <ul id="nav-mobile" class="hidden-menu">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Fin du Navigation Mobile -->
+        </nav>
+        <!-- Fin de la Barre de Navigation -->
+    </header>
+
+    <!-- Début du Main -->
+    <main class="home-main">
+        <section id="home-section">
+            <h1>Partez à la découverte de l'espace avec Space Tour 🚀</h1>
+            <div class="home-content">
+                <p>Explorer l'inconnu, c'est notre spécialité. <br> Bienvenue à bord de notre agence de voyage intergalactique, où chaque rêve d'aventure spatiale devient une réalité. <br> Nous sommes les Gardiens de la Galaxie, votre équipage dévoué pour des voyages au-delà des étoiles!</p>
+                <button id="home-cta" class="animate__animated animate__pulse">En savoir plus</button>
+            </div>
+        </section>
+    </main>
+    <!-- Fin du Main -->
+
+    <!-- Début section #about -->
+    <section id="about">
+        <h2>À propos de nous 🧑‍🚀</h2>
+        <!-- Présentation de l'équipe Dynamique -->
+        <div id="about-team"></div>
+        <!-- Fin de la présentation de l'équipe -->
+        <hr>
+        <!-- Présentation de l'agence -->
+        <div id="about-content">
+            <div id="about-text">
+                <p>Notre équipe Space Tour est composée d'une bande de voyageurs interstellaires passionnés, prêts à vous emmener vers des destinations cosmiques inexplorées. Des experts en navigation stellaire aux connaisseurs des cultures extraterrestres, chaque membre des Gardiens de la Galaxie est déterminé à rendre votre voyage spatial inoubliable.</p>
+                <p>Explorez des lunes mystérieuses, découvrez des civilisations extraterrestres fascinantes, et laissez-vous émerveiller par les phénomènes cosmiques éblouissants. Chaque voyage est une odyssée unique, conçue pour élargir votre perspective et vous faire vivre des moments que vous pensiez réservés aux héros de l'espace.</p>
+                <button type="submit" id="cta-about">Découvrir nos destinations</button>
+            </div>
+        </div>
+        <!-- Fin de la présentation de l'agence -->
+    </section>
+    <!-- Fin de la section #about -->
+
+    <!-- Début de la section #destinations TODO: -->
+    <section id="destinations">
+        <h2>Explorez nos Destinations 🪐</h2>
+        <!-- Présentation des destinations statique TODO: passer cette partie en version dynamique -->
+        <div id="list-destination">
+            <!-- Carte de présentation de chaque destination -->
+            <div class="destination">
+                <img src="assets/images/destinations/nebuleuse.jpeg" alt="une image de présentatation">
+                <h3>Nébuleuse de l'Aurore</h3>
+                <hr>
+                <p>Localisation : <br>Au cœur de la galaxie, cette nébuleuse offre un spectacle visuel époustouflant avec des lumières chatoyantes et des formations nuageuses éblouissantes. Un voyage parfait pour les amateurs de photographie stellaire.</p>
+                <a href="destinations.html?destination=1">En savoir plus</a>
+            </div>
+            <!-- Fin de la carte de présentation -->
+            <!-- Reste des Cartes de présentation des destinations -->
+            <div class="destination">
+                <img src="assets/images/destinations/xyron.png" alt="une image de présentatation">
+                <h3>Planète Xyron-9, Le Jardin des Étoiles</h3>
+                <hr>
+                <p>Localisation : <br>Une planète luxuriante avec des forêts bioluminescentes et des jardins extraterrestres. Xyron-9 est réputée pour ses espèces végétales uniques et ses vues panoramiques exceptionnelles.</p>
+                <a href="destinations.html?destination=2">En savoir plus</a>
+            </div>
+            <div class="destination">
+                <img src="assets/images/destinations/cite.jpeg" alt="une image de présentatation">
+                <h3>Station Orbitalis, La Cité Flottante</h3>
+                <hr>
+                <p>Localisation : <br>Une station spatiale avancée qui orbite autour d'une étoile lointaine. Explorez des plates-formes commerciales, des quartiers résidentiels avec vue sur l'espace, et découvrez la vie urbaine dans l'apesanteur.</p>
+                <a href="destinations.html?destination=3">En savoir plus</a>
+            </div>
+            <div class="destination">
+                <img src="assets/images/destinations/lune.avif" alt="une image de présentatation">
+                <h3>Lune d'Éclipse, Le Sanctuaire des Mystères</h3>
+                <hr>
+                <p>Localisation : <br>Une lune mystérieuse où d'anciens artefacts extraterrestres ont été découverts. Les ruines antiques, les cavernes lumineuses et les phénomènes énergétiques énigmatiques en font une destination captivante pour les amateurs d'histoire intergalactique.</p>
+                <a href="destinations.html?destination=4">En savoir plus</a>
+            </div>
+            <div class="destination">
+                <img src="assets/images/destinations/asteria.webp" alt="une image de présentatation">
+                <h3>Asteria Prime, La Perle des Planètes</h3>
+                <hr>
+                <p>Localisation : <br>Une planète joyau aux vastes océans de cristaux liquides. Les plages scintillantes, les villes côtières futuristes et la biodiversité unique font d'Asteria Prime une destination idéale pour les passionnés de planètes exotiques.</p>
+                <a href="destinations.html?destination=5">En savoir plus</a>
+            </div>
+            <div class="destination">
+                <img src="assets/images/destinations/ver.jpeg" alt="une image de présentatation">
+                <h3>Trou de Ver de Luminara, Le Portail Cosmique</h3>
+                <hr>
+                <p>Localisation : <br>Un trou de ver rare qui offre un passage vers des régions inexplorées de l'univers. Les voyageurs peuvent traverser ce portail cosmique pour atteindre des constellations lointaines et des galaxies peu connues.</p>
+                <a href="destinations.html?destination=6">En savoir plus</a>
+            </div>
+            <!-- Fin des cartes de présentation -->
+        </div>
+        <!-- Fin de la présentation des destinations -->
+    </section>
+    <!-- Fin de la section #destinations -->
+
+    <!-- Début de la section #contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <h3 class="waving" data-hover="🚀"></h3>
+        <!-- Formulaire de contact TODO:: gérer la soumission du formulaire pour finir la fonctionnalité -->
+        <form action="" id="contact-form">
+            <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" name="name" id="name" placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Votre email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+            </div>
+            <button type="submit" id="form-contact-submit">Envoyer</button>
+        </form>
+        <!-- Fin du formulaire de contact -->
+
+        <!-- Bouton Up Haut de Page -->
+        <button id="up">⬆️</button>
+    </section>
+    <!-- Fin de la section #contact -->
+
+    <!-- Début du Footer -->
+    <footer>
+        <p>&copy; 2023 Agence de Voyages Fantastiques</p>
+    </footer>
+    <!-- Fin du Footer -->
+
+    <!-- Dépendance Librairie Externes JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Dépendance Librairie JS SMTP pour l'envoie de mail -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Dépendance Locale pour l'envoie de mail -->
+    <script src="assets/js/services/mailer-service.js"></script>
+    <script src="assets/js/services/destinations-service.js"></script>
+    <script src="assets/js/services/team-service.js"></script>
+
+    <!-- Dépendance Locale de données Javascript pour la page d'accueil -->
+    <script src="assets/js/data/data.js"></script>
+
+    <!-- Dépendance Locale JS pour la page d'accueil -->
+    <!-- Script Javascript permettant de gérer le menu burger & l'affichage de la home -->
+    <script src="assets/js/bg-menu.js"></script>
+    <script src="assets/js/home.js"></script>
+    <!-- Dépendance Locale pour la gestion du formulaire de la page d'accueil -->
+    <script src="assets/js/services/contact-form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Style complémentaire pour la page destinations -->
+    <link rel="stylesheet" href="assets/css/show-destination.css">
+    <!-- Ajustement du titre -->
+    <title>Destinations | Space Tour</title>
+</head>
+
+<body>
+    <!-- Header avec la Navigation -->
+    <header>
+        <nav>
+            <a href="/public/index.html" id="brand-link">
+                <img src="assets/images/astronaute.png" id="brand-logo" alt="logo angence de voyages">
+            </a>
+            <ul id="nav-desktop">
+                <li><a href="/public/index.html" class="nav-link">Accueil</a></li>
+                <li><a href="/public/index.html#about" class="nav-link">À propos</a></li>
+                <li><a href="/public/index.html#destinations" class="nav-link active-link">Destinations</a></li>
+                <li><a href="/public/index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="bg-menu" class="btn-menu">
+                <img src="assets/images/burger-bar.png" alt="burger menu icon">
+            </button>
+            <ul id="nav-mobile" class="hidden-menu">
+                <li><a href="/public/index.html#home">Accueil</a></li>
+                <li><a href="/public/index.html#destinations">Destinations</a></li>
+                <li><a href="/public/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main avec la structure de la page -->
+    <main class="show-destination">
+        <h1 id="destination-name"></h1>
+        <div class="home-content">
+            <p id="destination-location"></p>
+            <button id="cta-destination" class="animate__animated animate__pulse">Reserver</button>
+        </div>
+    </main>
+    <!-- Fin de la Main -->
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Agence de Voyages Fantastiques</p>
+    </footer>
+    <!-- Fin du Footer -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Script Javascript contenant les données à injecter dans la structure HTML -->
+    <script src="assets/js/data/data.js"></script>
+    <script src="assets/js/services/destinations-service.js"></script>
+    <!-- Script Javascript permettant de gérer le menu burger -->
+    <script src="assets/js/bg-menu.js"></script>
+    <!-- Script Javascript permettant d'injecter le contenu dynamiquement dans la structure HTML -->
+    <script src="assets/js/destinations.js"></script>
+</body>
+
+</html>

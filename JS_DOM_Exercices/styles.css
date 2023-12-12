@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.dark-mode {
+    background-color: #212529;
+    color: #f2f2f2;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 2em auto;
+    padding: 2rem 0;
+    border: 1px solid #212529;
+}
+
+img {
+    max-width: 20%;
+    height: auto;
+    margin: 0 auto;
+}
+
+button {
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border: 1px solid #212529;
+    border-radius: 0.25rem;
+    background-color: #f2f2f2;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #212529;
+    color: #f2f2f2;
+}
+
+select {
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border: 1px solid #212529;
+    border-radius: 0.25rem;
+    background-color: #f2f2f2;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 2em auto;
+    padding: 2rem;
+    border: 1px solid #212529;
+}

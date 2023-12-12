@@ -1,0 +1,164 @@
+/**
+ * Style CSS principal de l'application
+ */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #060C14;
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #ccc;
+}
+
+#brand-logo {
+    width: 30px;
+}
+
+#brand-logo:hover {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+#bg-menu {
+    display: none;
+}
+
+.hidden-menu {
+    display: none;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #060C14;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    bottom: 0;
+    width: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+button {
+    margin: 30px auto;
+    background-color: #060C14;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 0 5px #fdf7f7;
+}
+
+button:hover {
+    background: linear-gradient(#62ec9b, #1AE8EA);
+    box-shadow: 0 0 5px #62ec9b;
+    color: #000;
+}
+
+.active-link {
+    text-decoration: underline;
+    color: #ccc;
+}
+
+/* Ajoutez ici des règles CSS pour rendre la page responsive */
+@media screen and (max-width: 768px) {
+    /* Styles pour les écrans mobiles */
+    /** Navigation */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        align-content: stretch;
+        text-align: center;
+    }
+
+    #nav-desktop {
+        display: none;
+    }
+
+    #brand-link {
+        display: none;
+    }
+
+    .btn-menu {
+        background: linear-gradient(#62ec9b, #1AE8EA);
+        border: 1px solid #060C14;
+    }
+
+    .btn-menu:hover {
+        background: #060C14;
+        border: 1px solid #62ec9b;
+    }
+
+    #bg-menu {
+        display: block;
+        margin: 0 0;
+        width: 50px;
+        height: 50px;
+        padding: 5px 5px;
+        box-shadow: none;
+    }
+
+    #bg-menu img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .displaying-menu {
+        display: block;
+    }
+}

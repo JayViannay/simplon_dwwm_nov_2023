@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Style complémentaire pour la page d'erreur -->
+    <link rel="stylesheet" href="assets/css/error-page.css">
+    <!-- Ajustement du titre -->
+    <title>Erreur | Space Tour</title>
+</head>
+
+<body>
+    <!-- Header avec la Navigation -->
+    <header>
+        <nav>
+            <a href="/public/index.html" id="brand-link">
+                <img src="assets/images/astronaute.png" id="brand-logo" alt="logo angence de voyages">
+            </a>
+            <ul id="nav-desktop">
+                <li><a href="/public/index.html" class="nav-link">Accueil</a></li>
+                <li><a href="/public/index.html#about" class="nav-link">À propos</a></li>
+                <li><a href="/public/index.html#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="/public/index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="bg-menu" class="btn-menu">
+                <img src="assets/images/burger-bar.png" alt="burger menu icon">
+            </button>
+            <ul id="nav-mobile" class="hidden-menu">
+                <li><a href="/public/index.html#home">Accueil</a></li>
+                <li><a href="/public/index.html#destinations">Destinations</a></li>
+                <li><a href="/public/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main avec la structure de la page -->
+    <main class="error">
+        <!-- Le Contenu Dynamique de la page d'erreur est injecté dans le H1 et le p -->
+        <h1 id="error-code"></h1>
+        <div class="error-content">
+            <p id="error-message"></p>
+            <a href="/public/index.html">Retour à la page d'accueil</a>
+        </div>
+    </main>
+    <!-- Fin de la Main -->
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Agence de Voyages Fantastiques</p>
+    </footer>
+    <!-- Fin du Footer -->
+    <!-- Script Javascript permettant de gérer le menu burger -->
+    <script src="assets/js/bg-menu.js"></script>
+    <!-- Script Javascript permettant d'injecter le contenu dynamiquement dans la structure HTML -->
+    <script src="assets/js/errors.js"></script>
+</body>
+
+</html>

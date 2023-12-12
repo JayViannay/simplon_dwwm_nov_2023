@@ -1,0 +1,298 @@
+/*
+ * Page d'acceuil home.html
+ */
+
+ /* Main Section */
+.home-main {
+    height: 100vh;
+    background-image: url('../images/main.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#home-section {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    border-radius: 5px;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    text-align: center;
+}
+
+.home-content p {
+    font-size: 1.2em;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+
+#home-cta {
+    margin: 30px auto;
+    background: linear-gradient(#62ec9b, #1AE8EA);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 0 5px #62ec9b;
+    color: #000;
+}
+
+#home-cta:hover {
+    background: #060C14;
+    color: #fff;
+    box-shadow: 0 0 5px #fdf7f7;
+}
+
+/* About & Team Section */
+#about {
+    background-image: url('../images/astronaute2.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#about-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#about-team {
+    /* TODO: Se réferer aux Maquettes */
+}
+
+.card-team {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #060C14;
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.card-team-avatar {
+    /* code provisoire 
+     intégrer les images de profil des membres de l'équipe */
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+/* Destinations Section */
+#list-destination {
+    /* TODO: Se référer aux Maquettes */
+}
+
+#destinations {
+    background-image: url('../images/bg.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.destination {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    background-color: #fff;
+    margin: 20px;
+    padding-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 350px;
+    height: 400px;
+    box-shadow: 0 0 5px #bbb9b9;
+}
+
+.destination h3 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.destination p {
+    font-size: 0.5em;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+
+.destination:hover {
+    box-shadow: 0 0 10px #62ec9b;
+}
+
+.destination img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Contact Section */
+#contact {
+    background-image: url('../images/destinations/asteria.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    padding: 2em 4em;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    width: 80%;
+    margin: 15px auto;
+    color: #fff;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    height: 2em;
+    place-content: baseline;
+    box-shadow: 0 0 5px #fdf7f7;
+}
+
+textarea {
+    border-radius: 5px;
+    border: none;
+    height: 8em;
+    place-content: baseline;
+    box-shadow: 0 0 5px #fdf7f7;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+/* Animation de la fusée sur la page d'accueil */
+.waving:before {
+    content: attr(data-hover);
+}
+
+.waving:hover {
+    animation-name: wave-animation;
+    animation-duration: 3.0s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+}
+
+
+/* Ajoutez ici des règles CSS pour rendre la page responsive */
+@media screen and (max-width: 768px) {
+    /** Page d'accueil */
+    .home-content {
+        font-size: 0.8em;
+    }
+}
+
+/**
+ * Animation de rotation du logo dans la barre de navigation (visible en desktop uniquement)
+ */
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/**
+ * Animation de la fusée sur la page d'accueil (visible en desktop uniquement)
+ */
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
