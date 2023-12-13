@@ -44,12 +44,12 @@
 
 - Vérifiez que la ligne a bien été supprimée avec la commande `SELECT * FROM competence;`
 
-### 4. Modification de données
+### 8. Modification de données
 - Modifiez une ligne de la table `competence` avec la commande `UPDATE competence SET name = 'HTML5', description = 'HyperText Markup Language 5' WHERE id = 1;`
 
 - Vérifiez que la ligne a bien été modifiée avec la commande `SELECT * FROM competence WHERE id = 1;`
   
-### 5. Sélection de données
+### 9. Sélection de données
 - Affichez tous les apprenants avec la commande `SELECT * FROM apprenant;`
 
 - Affichez tous les apprenants de la ville de Paris avec la commande `SELECT * FROM apprenant WHERE ville = 'Paris';`
@@ -62,4 +62,4 @@
 
 - Affichez tous les apprenants dont le nom de famille est 'Doe' ou qui ont entre 20 et 30 ans et qui habitent à Paris avec la commande `SELECT * FROM apprenant WHERE (lastname = 'Doe' OR age BETWEEN 20 AND 30) AND ville = 'Paris';`
 
-### 4. - Exercez-vous aux commandes SQL en reproduisant les commandes et les requêtes ci-dessus dans une nouvelle base de données nommée `simplon_db_2` et les tables staff et formation (choisissez les champs que vous souhaitez). Bon chance ! :tada: :muscle:
+### 10. - Exercez-vous aux commandes SQL en reproduisant les commandes et les requêtes ci-dessus dans une nouvelle base de données nommée `simplon_db_2` et les tables staff et formation (choisissez les champs que vous souhaitez). Bon chance ! :tada: :muscle:
