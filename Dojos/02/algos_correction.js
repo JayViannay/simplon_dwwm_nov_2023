@@ -18,14 +18,28 @@ function thirdAngle(angleA, angleB) {
 // Ex : 2004, 2016 et 2020 sont des années bissextiles
 // Rappel : Pour vérifier si un nombre est divisible par un autre, tu peux utiliser l'opérateur "modulo" (%) 
 
-function isLeap(year) {
-    if (year % 4 === 0 && year % 100 !== 0) {
-        return true;
-    } else if (year % 400 === 0) {
-        return true;
-    } else {
-        return false;
+// Définition de la fonction theaterSieges qui ne prend pas d'arguments.
+function theaterSieges() {
+    // Initialisation d'un tableau vide pour stocker les sièges de la salle.
+    let tab = [];
+
+    // Boucle externe pour parcourir chaque colonne de sièges (26 colonnes au total).
+    for (let i = 1; i <= 26; i++) {
+        // Initialisation d'un tableau vide pour stocker les positions des sièges dans une rangée.
+        let tab2 = [];
+
+        // Boucle interne pour parcourir chaque siège dans une rangée (100 sièges au total).
+        for (let j = 1; j <= 100; j++) {
+            // Formatage de la position du siège dans une rangée (par exemple, "1-1", "1-2", ..., "26-100").
+            tab2.push(i + "-" + j);
+        }
+
+        // Ajout du tableau de rangée (tab2) à la liste des sièges (tab).
+        tab.push(tab2);
     }
+
+    // Retourne le tableau contenant toutes les rangées de sièges.
+    return tab;
 }
 
 // ALGO 3 
