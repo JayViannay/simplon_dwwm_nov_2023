@@ -9,13 +9,11 @@ $database = [
 
 // Obtenir tous les produits
 function getAllProduits() {
-    global $database;
     return ['products' => array_values($database)];
 }
 
 // Obtenir un produit par ID
 function getProduitById($id) {
-    global $database;
     return isset($database[$id]) ? $database[$id] : null;
 }
 
